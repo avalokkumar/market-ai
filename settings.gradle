@@ -1,0 +1,22 @@
+rootProject.name = 'market-ai'
+
+include 'customer'
+findProject(':services:customer')?.name = 'customer'
+
+include 'services:campaign'
+findProject(':services:campaign')?.name = 'campaign'
+
+include 'gateway'
+findProject(':services:gateway')?.name = 'gateway'
+
+include 'services:lead'
+findProject(':services:lead')?.name = 'lead'
+
+include 'services:commons'
+findProject(':services:commons')?.name = 'commons'
+
+include 'services:rule'
+findProject(':services:rule')?.name = 'rule'
+
+include 'services:segment'
+findProject(':services:segment')?.name = 'segment'
